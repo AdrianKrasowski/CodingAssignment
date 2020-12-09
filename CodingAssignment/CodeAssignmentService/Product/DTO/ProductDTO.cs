@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CodeAssignmentService.Models
 {
-    public class ProductRequest
+    public class ProductDTO
     {
         public int ProductId { get; set; }
         public string Name { get; set; }

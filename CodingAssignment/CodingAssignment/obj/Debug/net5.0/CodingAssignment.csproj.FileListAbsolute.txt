@@ -35,3 +35,5 @@ C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignmen
 C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodingAssignment\obj\Debug\net5.0\ref\CodingAssignment.dll
 C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodingAssignment\obj\Debug\net5.0\CodingAssignment.pdb
 C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodingAssignment\obj\Debug\net5.0\CodingAssignment.genruntimeconfig.cache
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodingAssignment\bin\Debug\net5.0\CodeAssignmentService.dll
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodingAssignment\bin\Debug\net5.0\CodeAssignmentService.pdb

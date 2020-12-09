@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using CodeAssignmentService.Models;
 
-namespace CodingAssignment.Models
+namespace CodeAssignmentService.DeliveryDate.Models.Request
 {
-    public class GetDeliveryDateRequest
+    public class AvailableDeliveryDateQuery
     {
         public int PostalCode { get; set; }
+
         public IEnumerable<ProductDTO> Products { get; set; }
     }
 }

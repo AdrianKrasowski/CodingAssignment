@@ -9,7 +9,7 @@ namespace CodeAssignmentService.DeliveryDate.Utility.Factories
     {
         public static AbstractDeliveryDateFilter GenerateFilterForProductType(string productType)
         {
-            switch (productType)
+            switch (productType.ToLower())
             {
                 case ProductTypes.External:
                     return new ExternalProductDeliveryDateFilter();

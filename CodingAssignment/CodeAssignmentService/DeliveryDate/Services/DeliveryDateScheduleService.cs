@@ -18,12 +18,15 @@ namespace CodeAssignmentService.DeliveryDate.Models.Services
             _deliveryDateBuilder = deliveryDateBuilder;
         }
         public IEnumerable<AvailableDeliveryDate> CalculateAvailableDeliveryDatesForProducts(int postalCode,
-            IEnumerable<ProductRequest> orderedProducts)
+            IEnumerable<ProductDTO> orderedProducts)
         {
             NextTwoWeeksDateProvider.GenerateTimeSpan();
 
             var daysToPossibleDeliveryOfProducts =
                 orderedProducts.Select(product => new ProductDeliveryDates(product).DaysUntilDelivery);
+
+            if (!daysToPossibleDeliveryOfProducts.Any() || daysToPossibleDeliveryOfProducts.Any(x => !x.Any()))
+                return null;
 
             return _deliveryDateBuilder.GenerateAvailableDeliveryDates(postalCode,
                 new DeliveryDateDictionary(daysToPossibleDeliveryOfProducts).DaysToDelivery);

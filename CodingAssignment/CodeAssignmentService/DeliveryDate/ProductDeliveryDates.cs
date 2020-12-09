@@ -28,7 +28,7 @@ namespace CodeAssignmentService.DeliveryDate.Models
 
         private IEnumerable<DateTime> suggestedDeliveryDates;
 
-        public ProductDeliveryDates(ProductRequest product)
+        public ProductDeliveryDates(ProductDTO product)
         {
             _productId = product.ProductId;
             _name = product.Name;
