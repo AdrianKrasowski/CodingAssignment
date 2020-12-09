@@ -1,0 +1,9 @@
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodeAssignmentService\obj\Debug\netstandard2.0\CodeAssignmentService.csprojAssemblyReference.cache
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodeAssignmentService\obj\Debug\netstandard2.0\CodeAssignmentService.AssemblyInfoInputs.cache
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodeAssignmentService\obj\Debug\netstandard2.0\CodeAssignmentService.AssemblyInfo.cs
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodeAssignmentService\obj\Debug\netstandard2.0\CodeAssignmentService.csproj.CoreCompileInputs.cache
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodeAssignmentService\bin\Debug\netstandard2.0\CodeAssignmentService.deps.json
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodeAssignmentService\bin\Debug\netstandard2.0\CodeAssignmentService.dll
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodeAssignmentService\bin\Debug\netstandard2.0\CodeAssignmentService.pdb
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodeAssignmentService\obj\Debug\netstandard2.0\CodeAssignmentService.dll
+C:\Users\adrian433\Source\Repos\AdrianKrasowski\CodingAssignment\CodingAssignment\CodeAssignmentService\obj\Debug\netstandard2.0\CodeAssignmentService.pdb

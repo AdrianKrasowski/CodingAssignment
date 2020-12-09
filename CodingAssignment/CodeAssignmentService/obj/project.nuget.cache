@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yrfG1DGuPN1TmFjmsOg7ISNW/IPAL31qL4U0RdumRhWJl8JhEbpkrAPQldi16oppujZtT2EFAeiNX1J95+WQZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adrian433\\Source\\Repos\\AdrianKrasowski\\CodingAssignment\\CodingAssignment\\CodeAssignmentService\\CodeAssignmentService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adrian433\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
