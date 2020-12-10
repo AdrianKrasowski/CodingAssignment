@@ -43,6 +43,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.VisualStudio.Services.Client": {
+              "target": "Package",
+              "version": "[16.153.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

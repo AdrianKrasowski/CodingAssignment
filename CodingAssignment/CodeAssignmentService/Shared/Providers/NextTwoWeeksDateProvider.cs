@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CodeAssignmentService.Shared.Providers.Abstract;
 
 namespace CodeAssignmentService.Shared.Providers
 {
@@ -12,10 +13,10 @@ namespace CodeAssignmentService.Shared.Providers
             get => _datesInNextTwoWeeks;
         }
 
-        public static void GenerateTimeSpan()
+        public static void GenerateTimeSpan(ITimeProvider timeProvider)
         {
-            var lastDay = DateTime.Today.AddDays(14);
-            var startDate = DateTime.Today;
+            var lastDay = timeProvider.GetToday().AddDays(14);
+            var startDate = timeProvider.GetToday();
             _datesInNextTwoWeeks = Enumerable.Range(0, 1 + lastDay.Subtract(startDate).Days)
                 .Select(offset => startDate.AddDays(offset))
                 .ToList();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using CodeAssignmentService.DeliveryDate.Utility.Helpers.Abstract;
 using CodeAssignmentService.Shared.Providers;
+using CodeAssignmentService.Shared.Providers.Abstract;
 
 namespace CodeAssignmentService.DeliveryDate.Utility.Helpers.Filters
 {
@@ -12,6 +13,10 @@ namespace CodeAssignmentService.DeliveryDate.Utility.Helpers.Filters
             if (daysInAdvance < 5)
                 daysInAdvance = 5;
             return FilterByWeekdays(deliveryDays, daysInAdvance, NextTwoWeeksDateProvider.DatesInNextTwoWeeks);
+        }
+
+        public ExternalProductDeliveryDateFilter(ITimeProvider timeProvider) : base(timeProvider)
+        {
         }
     }
 }

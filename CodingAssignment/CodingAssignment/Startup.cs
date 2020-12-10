@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using CodeAssignmentService.DeliveryDate.Models.Services;
 using CodeAssignmentService.DeliveryDate.Services.Abstract;
 using CodeAssignmentService.DeliveryDate.Utility.Helpers.Abstract;
+using CodeAssignmentService.Shared.Providers.Abstract;
 using CodeAssignmentService.Utility.Helpers.DeliveryDate;
 
 namespace CodingAssignment
@@ -34,6 +35,7 @@ namespace CodingAssignment
             services.AddControllers();
             services.AddTransient<IAvailableDeliveryDateBuilder, AvailableDeliveryDateBuilder>();
             services.AddTransient<IDeliveryDateScheduleService, DeliveryDateScheduleService>();
+            services.AddTransient<ITimeProvider, TimeProvider>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CodingAssignment", Version = "v1" });
