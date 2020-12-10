@@ -15,7 +15,7 @@ namespace CodeAssignmentService.Shared.Providers
 
         public static void GenerateTimeSpan(ITimeProvider timeProvider)
         {
-            var lastDay = timeProvider.GetToday().AddDays(14);
+            var lastDay = timeProvider.GetToday().AddDays(13);
             var startDate = timeProvider.GetToday();
             _datesInNextTwoWeeks = Enumerable.Range(0, 1 + lastDay.Subtract(startDate).Days)
                 .Select(offset => startDate.AddDays(offset))

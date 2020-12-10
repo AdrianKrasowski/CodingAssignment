@@ -6,6 +6,7 @@ namespace CodeAssignmentService.Utility.Helpers.DeliveryDate
 {
     public class DeliveryDateDictionary
     {
+        private const int TimeSpanLength = 14;
         private IDictionary<int, int> _deliveryDateDictionary;
         private int numberOfProducts;
 
@@ -29,7 +30,7 @@ namespace CodeAssignmentService.Utility.Helpers.DeliveryDate
 
         private void InitializeDictionary()
         {
-            for (int i = 0; i <= 14; i++)
+            for (int i = 0; i <= TimeSpanLength; i++)
             {
                 _deliveryDateDictionary.Add(i, 0);
             }

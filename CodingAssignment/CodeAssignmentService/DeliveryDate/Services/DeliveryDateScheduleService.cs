@@ -29,7 +29,7 @@ namespace CodeAssignmentService.DeliveryDate.Models.Services
                 orderedProducts.Select(product => new ProductDeliveryDates(product,_timeProvider).DaysUntilDelivery);
 
             if (!daysToPossibleDeliveryOfProducts.Any() || daysToPossibleDeliveryOfProducts.Any(x => !x.Any()))
-                return null;
+                return new List<AvailableDeliveryDate>();
 
             return _deliveryDateBuilder.GenerateAvailableDeliveryDates(postalCode,
                 new DeliveryDateDictionary(daysToPossibleDeliveryOfProducts).DaysToDelivery);
