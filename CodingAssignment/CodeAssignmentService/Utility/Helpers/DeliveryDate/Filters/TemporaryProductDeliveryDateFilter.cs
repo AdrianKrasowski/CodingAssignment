@@ -11,13 +11,7 @@ namespace CodeAssignmentService.DeliveryDate.Utility.Helpers.Filters
     {
         public override IEnumerable<DateTime> FilterAvailableDeliveryDates(IEnumerable<DayOfWeek> deliveryDays, int daysInAdvance)
         {
-            return FilterByWeekdays(deliveryDays, daysInAdvance, NextTwoWeeksDateProvider.DatesInNextTwoWeeks.Take(GetDaysUntilEndOfTheWeek(_timeProvider.GetToday().DayOfWeek) + 1));
-        }
-
-        public int GetDaysUntilEndOfTheWeek(DayOfWeek day)
-        {
-            var daysUntilEndOfWeek = 7 - (int)day;
-            return daysUntilEndOfWeek == 7 ? 0 : daysUntilEndOfWeek;
+            return FilterByWeekdays(deliveryDays, daysInAdvance, NextTwoWeeksDateProvider.DatesInNextTwoWeeks.Take(_timeProvider.GetDaysUntilEndOfWeek()+1));
         }
 
         public TemporaryProductDeliveryDateFilter(ITimeProvider timeProvider) : base(timeProvider)

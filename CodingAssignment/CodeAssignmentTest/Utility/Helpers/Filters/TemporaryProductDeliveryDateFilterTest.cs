@@ -18,17 +18,9 @@ namespace CodeAssignmentTest.Utility.Helpers.Filters
         {
             var timeProviderMock = new Mock<ITimeProvider>();
             timeProviderMock.Setup(m => m.GetToday()).Returns(currentDate);
+            timeProviderMock.Setup(m => m.GetDaysUntilEndOfWeek()).Returns(6);
             NextTwoWeeksDateProvider.GenerateTimeSpan(timeProviderMock.Object);
             uut = new TemporaryProductDeliveryDateFilter(timeProviderMock.Object);
-        }
-
-        
-        [TestCase(DayOfWeek.Monday, 6)]
-        [TestCase(DayOfWeek.Sunday, 0)]
-        public void GetDaysUntilEndOfTheWeekShouldReturnExpectedNumberOfDaysUntilEndOfTheWeek(DayOfWeek dayOfWeek, int expectedResult)
-        {
-            var result = uut.GetDaysUntilEndOfTheWeek(dayOfWeek);
-            Assert.AreEqual(result, expectedResult);
         }
 
         [Test]

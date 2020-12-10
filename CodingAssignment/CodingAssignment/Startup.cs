@@ -14,6 +14,8 @@ using System.Threading.Tasks;
 using CodeAssignmentService.DeliveryDate.Models.Services;
 using CodeAssignmentService.DeliveryDate.Services.Abstract;
 using CodeAssignmentService.DeliveryDate.Utility.Helpers.Abstract;
+using CodeAssignmentService.Product.Validator;
+using CodeAssignmentService.Product.Validator.Abstract;
 using CodeAssignmentService.Shared.Providers.Abstract;
 using CodeAssignmentService.Utility.Helpers.DeliveryDate;
 
@@ -36,6 +38,7 @@ namespace CodingAssignment
             services.AddTransient<IAvailableDeliveryDateBuilder, AvailableDeliveryDateBuilder>();
             services.AddTransient<IDeliveryDateScheduleService, DeliveryDateScheduleService>();
             services.AddTransient<ITimeProvider, TimeProvider>();
+            services.AddTransient<IProductValidator, ProductValidator>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CodingAssignment", Version = "v1" });
